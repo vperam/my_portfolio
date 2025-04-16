@@ -22,12 +22,4 @@ I'm a Computer Science graduate student at Oklahoma State University and a forme
 
 ---
 
-## 📫 Let’s Connect
-
-- [LinkedIn](https://www.linkedin.com/in/venkata-ramana-reddy-peram/)
-- [LeetCode Profile](https://leetcode.com/u/RamanaPv/)
-- [Email](mailto:vperam@okstate.edu)
-
----
-
 Thanks for stopping by! Feel free to explore, fork, or star any projects that interest you ✨
