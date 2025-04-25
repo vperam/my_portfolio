@@ -96,6 +96,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+document.querySelector('.success-message-wrapper').style.display = 'none';
 
 
 for (let i = 0; i < formInputs.length; i++) {
@@ -130,3 +131,40 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+  
+  // Get form values
+  const fullname = this.querySelector('[name="fullname"]').value;
+  const email = this.querySelector('[name="email"]').value;
+  const message = this.querySelector('[name="message"]').value;
+  
+  const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdKhq3lRSw3UfZL1Iv4mfSk8C1pPUefrnwjjtkRizoqnQuu6g/viewform?usp=dialog';
+  
+
+  const formData = new FormData();
+  formData.append('entry.2005620554', fullname);
+  formData.append('entry.1045781291', email);
+  formData.append('entry.827828569', message);
+  
+  fetch(formURL, {
+    method: 'POST',
+    body: formData,
+    mode: 'no-cors'
+  })
+  .then(() => {
+    // Show success message
+    form.style.display = 'none';
+    document.querySelector('.success-message-wrapper').style.display = 'block';
+    
+    // Reset form
+    this.reset();
+    this.querySelector('[data-form-btn]').setAttribute('disabled', '');
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('There was an error submitting the form. Please try again.');
+  });
+});

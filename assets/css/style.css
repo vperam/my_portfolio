@@ -1514,3 +1514,38 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.success-message-wrapper {
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-3);
+  margin-top: 20px;
+  display: none;
+}
+
+.success-message {
+  background: var(--bg-gradient-jet);
+  padding: 15px;
+  border-radius: 14px;
+  color: var(--white-2);
+  text-align: center;
+}
+
+.success-message .success-icon {
+  font-size: 40px;
+  color: var(--orange-yellow-crayola);
+  margin-bottom: 10px;
+}
+
+.success-message .success-title {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-500);
+  margin-bottom: 10px;
+}
+
+.success-message .success-text {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  color: var(--light-gray);
+}
