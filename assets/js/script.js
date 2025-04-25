@@ -141,7 +141,7 @@ form.addEventListener("submit", function(e) {
   const email = this.querySelector('[name="email"]').value;
   const message = this.querySelector('[name="message"]').value;
   
-  const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdKhq3lRSw3UfZL1Iv4mfSk8C1pPUefrnwjjtkRizoqnQuu6g/viewform?usp=dialog';
+  const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdKhq3lRSw3UfZL1Iv4mfSk8C1pPUefrnwjjtkRizoqnQuu6g/formResponse';
   
 
   const formData = new FormData();
