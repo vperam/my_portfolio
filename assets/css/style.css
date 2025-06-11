@@ -1549,3 +1549,59 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: var(--fw-300);
   color: var(--light-gray);
 }
+
+/* Certifications Grid (similar to Projects) */
+.certifications-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .certifications-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .certifications-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Certification Item styling */
+.certifications-list li {
+  background: var(--border-gradient-onyx);
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.certifications-list li::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* Certification Title */
+.certifications-list .project-title {
+  color: var(--white-2);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-400);
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+/* Certification Category */
+.certifications-list .project-category {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+

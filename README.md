@@ -18,7 +18,7 @@ I'm a Computer Science graduate student at Oklahoma State University and a forme
 
 - Solving LeetCode challenges to sharpen DSA skills (📈 50+ problems solved)
 - Exploring large language models and AI-enhanced tools
-- Mentoring undergraduates as a Graduate Teaching Assistant for Operating Systems & Computer Systems courses
+- Building a good portfolio
 
 ---
 
